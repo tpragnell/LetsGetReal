@@ -40,7 +40,15 @@ public class Tester{
     //Test reciprocal
     System.out.println("Reciprocal? " + n3.reciprocal()); // 2.0
 
+    //Test GCD - make public for testing
+    // System.out.println("GCD? " + RationalNumber.gcd(270, 192)); // 6
+    // System.out.println("GCD? " + RationalNumber.gcd(0, 192)); // 192
+    // System.out.println("GCD? " + RationalNumber.gcd(270, 0)); // 270
 
+    //Test Reduce - make public for testing
+    // n1.reduce();
+    // System.out.println(n1.getNumerator()); //2
+    // System.out.println(n1.getDenominator()); //1
   }
 
 
