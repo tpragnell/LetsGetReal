@@ -13,7 +13,8 @@ public class RationalNumber extends RealNumber {
   }
 
   public double getValue(){
-    return super.getValue();
+    double d = ((double)numerator/(double)denominator);
+    return d;
   }
 
   /**
@@ -81,20 +82,25 @@ public class RationalNumber extends RealNumber {
   /**
   *Return a new RationalNumber that is the this divided by the other
   */
-  public RationalNumber divide(RationalNumber other){
+  public RationalNumber divide(RationalNumber _other){
     return new RationalNumber(numerator * _other.getDenominator(), denominator * _other.getNumerator());
   }
 
   /**
   *Return a new RationalNumber that is the sum of this and the other
   */
-  public RationalNumber add(RationalNumber other){
-    return new RationalNumber(numerator * _other.getNumerator(), denominator * _other.getDenominator());
+  public RationalNumber add(RationalNumber _other){
+    int commonDenominator = (denominator * _other.getDenominator());
+    return new RationalNumber( ((numerator * _other.getDenominator()) + (_other.getNumerator() * denominator)),
+    commonDenominator);
+
   }
   /**
   *Return a new RationalNumber that this minus the other
   */
-  public RationalNumber subtract(RationalNumber other){
-    return null;
+  public RationalNumber subtract(RationalNumber _other){
+    int commonDenominator = (denominator * _other.getDenominator());
+    return new RationalNumber( ((numerator * _other.getDenominator()) - (_other.getNumerator() * denominator)),
+    commonDenominator);
   }
 }

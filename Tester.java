@@ -23,19 +23,22 @@ public class Tester{
 
     //Test add
     System.out.println("Add? " + r2.add(r4)); // 6.0
-    System.out.println("Add? " + n2.add(r4)); // 6.5
+    System.out.println("Add? " + r4.add(n2)); // 6.5
+    System.out.println("Add? " + n1.add(n4)); // 8.0
 
     //Test multiply
     System.out.println("Multiply? " + r2.multiply(r4)); // 8.0
     System.out.println("Multiply? " + n4.multiply(r4)); // 24.0
+    System.out.println("Multiply? " + n4.multiply(n1)); // 12.0
 
     //Test divide
     System.out.println("Divide? " + r2.divide(r4)); // 0.5
-    System.out.println("Divide? " + n4.divide(r4)); // 1.5
+    System.out.println("Divide? " + n4.divide(n1)); // 3.0
 
     //Test subtract
     System.out.println("Subtract? " + r2.subtract(r4)); // -2.0
     System.out.println("Subtract? " + n4.subtract(r4)); // 2.0
+    System.out.println("Subtract? " + n1.subtract(n4)); // -4.0
 
     //Test reciprocal
     System.out.println("Reciprocal? " + n3.reciprocal()); // 2.0
@@ -49,6 +52,7 @@ public class Tester{
     // n1.reduce();
     // System.out.println(n1.getNumerator()); //2
     // System.out.println(n1.getDenominator()); //1
+
   }
 
 
