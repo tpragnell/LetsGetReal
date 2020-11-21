@@ -33,31 +33,30 @@ public class RealNumber{
   public RealNumber add(RealNumber _other){
      //other can be ANY RealNumber, including a RationalNumber
      //or other subclasses of RealNumber (that aren't written yet)
-     RealNumber returned = new RealNumber(value + _other.getValue());
-     return(returned);
+     return new RealNumber(value + _other.getValue());
   }
 
   /*
   *Return a new RealNumber that has the value of:
   *the product of this and the other
   */
-  public RealNumber multiply(RealNumber other){
-        return null;
+  public RealNumber multiply(RealNumber _other){
+     return new RealNumber(value * _other.getValue());
   }
 
   /*
   *Return a new RealNumber that has the value of:
   *this divided by the other
   */
-  public RealNumber divide(RealNumber other){
-        return null;
+  public RealNumber divide(RealNumber _other){
+      return new RealNumber(value / _other.getValue());
   }
 
   /*
   *Return a new RealNumber that has the value of:
   *this minus the other
   */
-  public RealNumber subtract(RealNumber other){
-    return null;
+  public RealNumber subtract(RealNumber _other){
+     return new RealNumber(value - _other.getValue());
   }
 }
