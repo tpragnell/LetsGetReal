@@ -91,8 +91,7 @@ public class RationalNumber extends RealNumber {
   */
   public RationalNumber add(RationalNumber _other){
     int commonDenominator = (denominator * _other.getDenominator());
-    return new RationalNumber( ((numerator * _other.getDenominator()) + (_other.getNumerator() * denominator)),
-    commonDenominator);
+    return new RationalNumber( ((numerator * _other.getDenominator()) + (_other.getNumerator() * denominator)), commonDenominator);
 
   }
   /**
@@ -100,7 +99,6 @@ public class RationalNumber extends RealNumber {
   */
   public RationalNumber subtract(RationalNumber _other){
     int commonDenominator = (denominator * _other.getDenominator());
-    return new RationalNumber( ((numerator * _other.getDenominator()) - (_other.getNumerator() * denominator)),
-    commonDenominator);
+    return new RationalNumber( ((numerator * _other.getDenominator()) - (_other.getNumerator() * denominator)), commonDenominator);
   }
 }
