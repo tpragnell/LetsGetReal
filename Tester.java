@@ -18,6 +18,8 @@ public class Tester{
     System.out.println("Are they equal? " + r1.equals(r2)); // False
     System.out.println("Are they equal? " + r2.equals(r3)); // False
     System.out.println("Are they equal? " + n1.equals(r2)); // True
+    System.out.println("Are they equal? " + n1.equals(n1)); // True
+    System.out.println("Are they equal? " + n1.equals(n2)); // False
 
     //Test add
     System.out.println("Add? " + r2.add(r4)); // 6.0
@@ -35,7 +37,10 @@ public class Tester{
     System.out.println("Subtract? " + r2.subtract(r4)); // -2.0
     System.out.println("Subtract? " + n4.subtract(r4)); // 2.0
 
-    //Test
+    //Test reciprocal
+    System.out.println("Reciprocal? " + n3.reciprocal()); // 2.0
+
+
   }
 
 

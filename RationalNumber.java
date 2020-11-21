@@ -7,9 +7,9 @@ public class RationalNumber extends RealNumber {
   *param deno the denominator
   */
   public RationalNumber(int nume, int deno){
-    super(nume / deno);
-    numerator = nume;
-    denominator = deno;
+    super(((deno == 0) ? 0 : nume) / ((deno == 0) ? 1 : deno));
+    numerator = ((deno == 0) ? 0 : nume);
+    denominator = ((deno == 0) ? 1 : deno);
   }
 
   public double getValue(){
@@ -17,7 +17,7 @@ public class RationalNumber extends RealNumber {
   }
 
   /**
-  *@return the numerator
+  *return the numerator
   */
   public int getNumerator(){
     return numerator;
@@ -33,20 +33,13 @@ public class RationalNumber extends RealNumber {
   *and denominator as this RationalNumber but reversed.
   */
   public RationalNumber reciprocal(){
-    return new RationalNumber(denominator , numerator);
+    return new RationalNumber(denominator, numerator);
   }
   /**
-  *@return true when the RationalNumbers have the same numerators and denominators, false otherwise.
+  *return true when the RationalNumbers have the same numerators and denominators, false otherwise.
   */
   public boolean equals(RationalNumber other){
-    return false;
-  }
-
-  /**
-  *return the value expressed as "3/4" or "8/3"
-  */
-  public String toString(){
-    return "0";
+    return((getNumerator() == other.getNumerator()) && (getDenominator() == other.getDenominator()));
   }
 
   /**Calculate the GCD of two integers.
