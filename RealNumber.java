@@ -30,10 +30,11 @@ public class RealNumber{
   *Return a new RealNumber that has the value of:
   *the sum of this and the other
   */
-  public RealNumber add(RealNumber other){
+  public RealNumber add(RealNumber _other){
      //other can be ANY RealNumber, including a RationalNumber
      //or other subclasses of RealNumber (that aren't written yet)
-     return null;
+     RealNumber returned = new RealNumber(value + _other.getValue());
+     return(returned);
   }
 
   /*
