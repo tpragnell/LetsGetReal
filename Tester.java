@@ -21,6 +21,11 @@ public class Tester{
     System.out.println("Are they equal? " + n1.equals(n1)); // True
     System.out.println("Are they equal? " + n1.equals(n2)); // False
 
+    //Test compareTo
+    System.out.println("compareTo? " + r2.compareTo(r2)); // 0
+    System.out.println("compareTo? " + r2.compareTo(r4)); // -1
+    System.out.println("compareTo? " + r4.compareTo(r2)); // 1
+
     //Test add
     System.out.println("Add? " + r2.add(r4)); // 6.0
     // System.out.println("Add? " + r4.add(n2)); // 6.5
