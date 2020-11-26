@@ -17,18 +17,18 @@ public class Tester{
     System.out.println("Are they equal? " + r1.equals(zero)); // False
     System.out.println("Are they equal? " + r1.equals(r2)); // False
     System.out.println("Are they equal? " + r2.equals(r3)); // False
-    System.out.println("Are they equal? " + n1.equals(r2)); // True
+    // System.out.println("Are they equal? " + n1.equals(r2)); // True
     System.out.println("Are they equal? " + n1.equals(n1)); // True
     System.out.println("Are they equal? " + n1.equals(n2)); // False
 
     //Test add
     System.out.println("Add? " + r2.add(r4)); // 6.0
-    System.out.println("Add? " + r4.add(n2)); // 6.5
+    // System.out.println("Add? " + r4.add(n2)); // 6.5
     System.out.println("Add? " + n1.add(n4)); // 8.0
 
     //Test multiply
     System.out.println("Multiply? " + r2.multiply(r4)); // 8.0
-    System.out.println("Multiply? " + n4.multiply(r4)); // 24.0
+    // System.out.println("Multiply? " + n4.multiply(r4)); // 24.0
     System.out.println("Multiply? " + n4.multiply(n1)); // 12.0
 
     //Test divide
@@ -37,11 +37,11 @@ public class Tester{
 
     //Test subtract
     System.out.println("Subtract? " + r2.subtract(r4)); // -2.0
-    System.out.println("Subtract? " + n4.subtract(r4)); // 2.0
+    // System.out.println("Subtract? " + n4.subtract(r4)); // 2.0
     System.out.println("Subtract? " + n1.subtract(n4)); // -4.0
 
     //Test reciprocal
-    System.out.println("Reciprocal? " + n3.reciprocal()); // 2.0
+    // System.out.println("Reciprocal? " + n3.reciprocal()); // 2.0
 
     //Test GCD - make public for testing
     // System.out.println("GCD? " + RationalNumber.gcd(270, 192)); // 6

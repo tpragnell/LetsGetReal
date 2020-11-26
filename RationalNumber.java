@@ -1,4 +1,4 @@
-public class RationalNumber extends RealNumber {
+public class RationalNumber extends Number{
   private int numerator, denominator;
 
   /**Initialize the RationalNumber with the provided values
@@ -7,12 +7,16 @@ public class RationalNumber extends RealNumber {
   *param deno the denominator
   */
   public RationalNumber(int _nume, int _deno){
-    super(((_deno == 0) ? 0 : _nume) / ((_deno == 0) ? 1 : _deno));
+    //super(((_deno == 0) ? 0 : _nume) / ((_deno == 0) ? 1 : _deno));
     numerator = ((_deno == 0) ? 0 : _nume);
     denominator = ((_deno == 0) ? 1 : _deno);
   }
 
   public double getValue(){
+    if(getDenominator() == 1)
+      return getNumerator();
+    if(getNumerator() == 0)
+      return 0;
     double d = ((double)numerator/(double)denominator);
     return d;
   }
@@ -41,6 +45,10 @@ public class RationalNumber extends RealNumber {
   */
   public boolean equals(RationalNumber _other){
     return((getNumerator() == _other.getNumerator()) && (getDenominator() == _other.getDenominator()));
+  }
+
+  public String toString(){
+    return ""+getValue();
   }
 
   /**Calculate the GCD of two integers.
